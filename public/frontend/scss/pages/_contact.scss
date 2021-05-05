@@ -1,0 +1,143 @@
+.contact-area{
+    .notice-top-area{
+        background-image: url("../../frontend/img/contact-bg.jpeg");
+        height: 400px;
+        width: 100%;
+        display: flex;
+        background-position: center;
+        background-repeat: no-repeat;
+        flex-direction: column;
+
+        &_desc{
+            display: inline;
+            color: #fff;
+            font-weight: bold;
+            z-index: 100;
+        }
+        }
+}
+
+.contact-forms{
+    background-color: #fff;
+    padding: 25px;
+
+    .form-control{
+        background-color: #F1F1F1;
+    }
+
+    .message-area{
+        position: relative;
+
+        .message-btn {
+            height: 40px;
+            width: 40px;
+            background-color: #1E87F0;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            border:0;
+        }
+    }
+
+}
+
+.contact-address{
+    background-color:#1E87F0;
+    color: #fff;
+    padding:25px;
+
+    &_title{
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 50px;
+        font-size: 30px;
+    }
+    &_add{
+
+    }
+    &_icon{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding-bottom: 10px;
+
+        P{
+            margin:0;
+            padding:0;
+            padding-left: 10px;
+        }
+    }
+    .contact-icon-size{
+        font-size: 22px;
+    }
+    .footer_logo{
+        margin-top: 15px;
+    }
+    .footer_logo_border{
+        padding:0;
+        margin:0;
+        border:0;
+        i{
+            font-size: 30px;
+            
+        } 
+    }
+
+    .footer_address{
+        text-align: center;
+        h2{
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+        address{
+            line-height: 30px;
+            margin-bottom: 0;
+                }
+        p{                
+            padding-left: 10px;
+            display: inline-block;
+            margin-bottom: 0;
+            }
+        
+        .footer_address_content{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+            
+        }
+        
+    }
+    .footer_link{
+        text-align: center;
+        line-height: 30px;
+        a{
+            color: white;
+            text-transform: capitalize;
+        }
+    }
+    .footer_content{
+        p{
+            padding-left: 10px;
+        }
+    }
+}
+
+.footer_content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 190px;
+    a{
+        color: #fff;
+        &:hover{
+            text-decoration: none;
+            color: #E69F33;
+        }
+    }
+}

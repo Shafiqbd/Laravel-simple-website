@@ -1,0 +1,213 @@
+//single notice
+.single-notice{
+    margin: 40px 0;
+    &_title{
+
+    }
+    &_short-text{
+        color: rgba(71, 156, 240, 1);
+    }
+    &_big-text{
+
+    }
+    &_highlight-text{
+        display: inline-block;
+    width: 174px;
+    text-align: start;
+    font-weight: bold;
+    }
+    &_button{
+        display: block;
+    background-color: rgba(30, 135, 240, 1);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 20px;
+    margin: 10px 454px;
+    }
+}
+.notice-btn{
+    text-align: center;
+}
+
+// cover image section
+.notice-top-area{
+
+    background-image: url("../../assets/img/notice-bg.png");
+    height: 250px;
+    width: 100%;
+    display: flex;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+ 
+    &::after{
+        content: "";
+        position: absolute;
+        display: block;
+        background-color: black;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 0.5;
+    }
+    &_title{
+        color: #fff;
+    font-weight: bold;
+    font-size: 30px;
+    letter-spacing: 2px;
+    z-index: 100;
+    text-transform: uppercase;
+    text-shadow: 0 0 9px black;
+
+    @include breakpoint(sm){
+        text-align: center;
+    }
+         span{
+            color: #F48D3A;;
+         }
+        }
+
+    }
+    .notice-area{
+        border:1px solid green;
+        border-radius: 10px;
+        padding:10px;
+        position: relative;
+        margin-bottom: 20px;
+
+        &_desc{
+            text-align: justify;
+            padding-left:35px;
+            margin:0;
+        }
+
+    }
+    .date-box-area_desc{
+        text-transform: capitalize;
+        background: blue;
+        display: inline-block;
+        border-radius: 5px;
+        padding: 5px;
+        color: #fff;
+        font-weight: bold;
+        position: absolute;
+        top: 6px;
+        left: -28px;
+    }
+
+    .notice-area-details{
+        &_date{
+            font-weight: bold;
+            display: block;
+            margin-bottom: 30px;
+        }
+        &_title{
+            font-weight: bold;
+            color: #479CF0;
+        }
+        &_desc{
+            text-align: justify;
+        }
+        &_author{
+            text-align: left;
+            max-width: 222px;
+            font-weight: bold;
+            margin-top: 30px;
+        }
+    }
+  
+
+        
+
+//demo
+.cover-image{
+    background-image: url(../../assets/img/teacher-cover.png);
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &::after{
+        content: "";
+        background-color: black;
+        position: absolute;
+        opacity: 0.5;
+        height: 301px;
+        width: 225px;
+    }
+    &_title{
+        color: white;
+        font-size: 65px;
+        font-weight: bold;
+        letter-spacing: 3px;
+        z-index: 500;
+        text-shadow: 0 0 17px black;
+    }
+}
+.notice-section{
+    border: 2px solid green;
+    padding: 10px;
+    margin-top: 50px;
+    position: relative;
+    border-radius: 5px;
+    &_desc{
+        overflow: hidden;
+        white-space: nowrap;
+        padding-left: 23px;
+        text-overflow: ellipsis;
+    }
+    &_date{
+        background-color: #1aacf2;
+        color: white;
+        font-weight: bold;
+        display: inline-block;
+        padding: 5px;
+        border: 2px solid aliceblue;
+        border-radius: 6px;
+        position: absolute;
+        top: 10px;
+        left: -37px;
+    }
+}
+.notice-section-demo{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+
+    margin-top: 30px;
+    border: 1px solid green;
+    border-radius: 8px;
+    padding: 6px;
+    transition: 10s;
+    // height: 50px;
+    &_desc{
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        padding-left: 28px;
+
+    }
+    &_date{
+        color: white;
+    background-color: brown;
+    /* display: inline-block; */
+    padding: 5px;
+    border: 2px solid beige;
+    border-radius: 10px;
+    box-shadow: 0 0 9px black;
+    
+    /* margin-left: -29px; */
+    /* margin-top: 64px; */
+    /* left: 16px; */
+    /* width: 100%; */
+    position: absolute;
+    }
+    &_date:hover{
+        margin-left: -358px;
+    }
+}

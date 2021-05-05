@@ -1,0 +1,118 @@
+.default-tab{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    &_img{
+
+    }
+    &_text{
+        margin-left: 20px;
+        span{
+            font-weight: bold;
+        }
+        &-button{
+            border: none;
+            background-color: rgba(30, 135, 240, 1);
+            color: white;
+            border-radius: 15px;
+            padding: 5px 30px;
+        }
+    }
+}
+.pagination-section{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.single-news-section{
+    
+    &_img{
+        height: 500px;
+    width: 100%;
+    }
+    &_text{
+        margin: 32px 0;
+        &-title{
+            font-weight: bold;
+            margin: 10px 0;
+        }
+    }
+    &_button{
+        border: none;
+        background-color: rgba(30, 135, 240, 1);
+        color: white;
+        border-radius: 6px;
+        padding: 3px 30px;
+        margin: 5px 470px;
+    }
+}
+ 
+.school-fee{
+    &_top-text{
+        color: rgba(30, 135, 240, 1);
+    }
+    &_img{
+        width: 100%;
+        height: 300px;
+    }
+    &_text{
+        border: 1px solid black;
+        border-top: none;
+        &-title{
+            background-color: rgba(30, 135, 240, 1);
+            color: white;
+            letter-spacing: -1px;
+            padding: 7px;
+        }
+        &-list{
+            padding: 5px 20px;
+            text-align: justify;
+            &-shorttext{
+                color: rgba(30, 135, 240, 1);
+                font-weight: bold;
+                letter-spacing: 1px;
+                margin: 15px 0px;
+            }
+        }
+    }
+}
+.result-tab_img{
+    width: 100%; 
+    height: 280px;
+}
+.academic-tab_img{
+    width: 100%;
+    height: 800px;
+}
+
+.news-top{
+    background-image: url("../../frontend/img/news-bg.jpeg");
+    height: 250px;
+    width: 100%;
+    margin-bottom: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.news-area{
+    background-image: url("../../frontend/img/26march.jpg");
+    height: 450px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &_desc{
+        margin-top: 30px;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+}

@@ -1,0 +1,538 @@
+//general
+body{
+    background-color: #E5E5E5 !important;
+}
+
+
+// slide image
+
+.slide_image_area{
+    background-image: url("../../frontend/img/s-bg.jpeg");
+    height: 550px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    @include breakpoint(sm){
+        height: 400px;
+      }
+
+}
+
+.slide-image{
+    height: 450px;
+    width: 100%;
+    @include breakpoint(sm){
+        height: 300px;
+      }
+}
+
+.top-nav{
+    background-color: #08539A;
+    padding:12px 0px;
+    &-wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @include breakpoint(sm){
+            display: block;
+          }
+      
+        &_title{
+            color: #E69F33;
+            text-transform: capitalize;
+            font-weight: bold;
+            padding: 0;
+            margin: 0;
+            @include breakpoint(md){
+                font-size: 30px;
+              }
+              @include breakpoint(sm){
+                text-align: center;
+              }
+            font-size: 35px;
+            text-shadow: 0px 2px 2px rgb(255 255 255 / 40%);
+        }
+        &_desc{
+            color: #fff;
+            font-size: 12px;
+            margin-bottom: 0;
+            text-align: center;
+            @include breakpoint(md){
+                text-align: left;
+              }
+              @include breakpoint(sm){
+                text-align: center;
+              }
+        }
+        .contact-area{
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            @include breakpoint(md){ 
+                display: block;
+                text-align: center;
+              }
+            &_icon{
+                display: flex;
+                @include breakpoint(sm){ 
+                    display: inline-flex;
+                  }
+                p{
+                    margin:0;
+                    padding:0;
+                    margin-top: 2px;
+                }
+            }
+            .contact-icon-size{
+                margin-right: 10px;
+                margin-top: 5px;
+                margin-left: 10px;
+
+            }
+        }
+        &_about{
+            max-width: 710px;
+        }
+    }
+}
+
+.coming-soon-img{
+    width: 100%;
+}
+
+
+
+
+.carousel-control-next-icon, .carousel-control-prev-icon{
+    background-color: #236501;
+}
+// notice board area
+.fast_dr{
+    box-shadow: 0px 0px 14px rgb(0 0 0 / 33%);
+    border-radius: 10px;
+    text-align: center;
+    text-transform: capitalize;
+    background-color: white;
+    padding:30px 10px;
+    height: 315px;
+    a{
+        text-decoration: none;
+    }
+
+    .img{
+        width: 200px;
+        height: 165px;
+        padding-bottom: 15px;
+        margin: 0 auto;
+    }
+    p{
+        margin-bottom: 0;
+    }
+    h5{
+        font-weight: 600;
+        margin: 0 auto;
+        line-height: 25px;
+        text-transform: capitalize;
+    }  
+}
+.full_dr{
+
+    .second_dr{
+        text-align: justify;
+        @include breakpoint(md){
+            margin-top: 20px;
+          }
+    }
+}
+.notice-content-area{
+    .notice-content-flex{
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+
+    }
+    p{
+        margin-left: 15px;
+        color: black; 
+    }
+    .notice-date{
+        background-color: rgba(30, 135, 240, 0.8);
+        color: white;
+        font-weight: bold;
+        font-size: 15px;
+        text-align: center;
+        border-radius: 5px;
+        height: 60px;
+        width: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    button{
+        background-color: rgba(30, 135, 240, 0.8);
+        margin-left: 149px;
+        text-transform: capitalize;
+    }
+}
+
+//why_choose_area
+.chose-us-section{
+    margin-bottom: 50px;
+
+    a:hover{
+    text-decoration: none;
+    } 
+    .chose-us-items{
+        text-align: center;
+        padding:20px 10px;
+        background-color: #ffff;
+        box-shadow:0px 0px 14px rgb(0 0 0 / 33%);
+        margin-bottom: 20px;
+        border-radius: 10px;
+        &:hover{
+            box-shadow:0 0 4px 1px #E69F33; 
+        }
+
+        &_link{
+            background-color: rgba(30, 135, 240, 0.8);
+            color: white;
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            margin:0 auto;
+            &:hover{
+                background-color: #000;
+            }
+            &-icon{
+                position: absolute;
+                color: #fff;
+                font-size: 30px;
+                text-align: center;
+    
+            }
+        }
+    &_title{
+        font-size: 22px;
+        font-weight: 600;
+        padding: 10px 0px;
+        margin: 0 auto;
+        
+    }
+
+    }
+
+}
+
+//our news
+.news-section{
+    margin: 30px auto;
+    .news{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &_image{
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+        }
+        &_text{
+            width: 550px;
+            text-align: justify;
+            margin-left: 20px;
+            padding: 20px;
+            @include breakpoint(sm){
+                margin-left: 0;
+              }
+        }
+    }
+}
+// autism area 
+.autism-section{
+    margin: 50px auto;
+}
+.autism-items{
+    background-color: rgba(30, 135, 240, 1);
+    text-align: center;
+    padding: 15px;
+    color: white;
+    .autism-text{
+        text-align: justify;
+    }
+    .autism-tittle{
+        text-align: center;
+        font-weight: bold;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        margin-top: 20px;
+        position: relative;
+        font-size: 24px;
+        span{
+            background: rgba(30, 135, 240, 1);
+            position: relative;
+            padding: 0 10px;
+        }
+        &::before{
+            content: "";
+            display: block;
+            position: absolute;
+            background: rgba(255, 255, 255, 0.7);
+            height: 1px;
+            width: 100%;
+            top: 50%;
+        }
+
+    }
+}
+
+
+.curiculam-list{
+    ul{
+        margin-top: 30px;
+        margin-bottom: 1rem;
+        list-style-type: disc;
+        margin-left: 60px;
+        @include breakpoint(sm){
+            margin-top: 0;
+        }
+        
+
+        li{
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 30px;
+        }
+    
+    }
+}
+
+.autism-btn{
+    margin: 30px 505px;
+    text-transform: capitalize;
+    background-color: white;
+}
+
+//autism spectrum area
+.autism_area{
+    margin-top: 45px;
+}
+.autism-spectrum-items{
+    margin-bottom: 28px;
+    .autism-spectrum-text{        
+       color: white;
+    }
+    .autism-spectrum-link-image{
+        height: 30px;
+        background-color: white;
+        padding: 10px;
+        margin-right: 5px;
+    }
+
+
+}
+.collapse-3{
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    background: #1e87f0;
+    justify-content: space-between;
+    margin: 0 58px;
+    height: 50px;
+}
+.collapse_div{
+    margin: 0 58px;
+}
+
+
+.autism-spectrum-section{
+    .sidebar-single{
+        line-height: normal;
+    }
+    
+.collapse-content{
+    background-color: #fff;
+    padding:10px;
+    align-items: justify;
+}
+
+ .fa-minus {
+    display: none;
+}
+
+a[aria-expanded=true] .fa-plus {
+    display: none;
+}
+a[aria-expanded=true] .fa-minus {
+    display: block;
+}
+
+
+}
+
+.sidebar-title {
+    padding: 10px;
+    background: #1e87f0;
+    margin-bottom: 10px;
+
+    a {
+        color: #fff;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        cursor: pointer;
+    }
+    .fa-minus, .fa-plus{
+        font-size: 25px;
+    }
+
+
+}
+
+#trust-board{
+    .carousel-control-next, .carousel-control-prev{
+        @include breakpoint(md){
+            bottom: 170px;
+          }
+    }
+    @include breakpoint(sm){
+        margin-bottom: 20px;
+      }
+   
+
+}
+
+//partner organization
+.partner_org-section{
+    padding: 20px;
+    background-color: #1e87f0;
+    color: white;
+    .partner-org-link-image{
+        width: 230px;
+        height: 80px;
+        @include breakpoint(sm){
+            height: 30px;
+          }
+    }
+    .carousel-control-next, .carousel-control-prev{
+        width: 1%;
+    }
+    .carousel-item-next, .carousel-item-prev, .carousel-item.active{
+        text-align: center;
+    }
+    .carousel-inner{
+        margin-bottom: 20px;
+    }
+}
+
+//logo
+.donate-area{
+    background-image: url(../img/donate.png);
+    display: flex;
+    height: 70px;
+    width: 200px;
+    background-repeat: no-repeat;
+    align-items: center;
+    background-position: center;
+    justify-content: center;
+    @include breakpoint(sm){
+        width: 175px;
+      }
+
+    .donate_text{
+        color: #fff;
+        text-transform: capitalize;
+        font-weight: bold;
+        font-size: 16px;
+        padding-left: 50px;
+        &:hover{
+            color: #0056b3;
+        }
+
+    }
+}
+
+.our-curriculam-section{
+    background-color: #fff;
+    margin-bottom: 50px;
+    .charts-desc{
+        text-align: justify; 
+        padding:20px;
+    }
+    .curriculam-wrapper{
+        margin-top: 30px;
+    }
+    .curriculam-col-title{
+        text-transform: uppercase; 
+    }
+    .sidebar-single{
+    margin-left: 20px;
+    @include breakpoint(sm){
+        margin-right: 20px;
+      }
+    }
+    .sidebar-title{
+        background-color: #363638; 
+        border:1px solid #fff;
+        margin-bottom: 0;
+        line-height: normal;
+
+    }
+    .collapse-content {
+        padding: 10px;
+   
+        align-items: justify;
+    }
+}
+
+
+.donate-bottom{
+    margin:0 auto;
+    @include breakpoint(md){
+        margin-top: 20px;
+      }
+}
+ 
+.owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+.fa-angle-left, .fa-angle-right{
+        color: #E69F33;
+        font-size: 30px;
+        font-weight: bold;
+        padding:0px 20px;
+        border: 0;
+    }
+    
+}
+
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot{
+    margin-top: -150px;
+    z-index: 1111;
+    @include breakpoint(sm){
+        margin-top: -80px;
+    }
+
+}
+
+.owl-carousel .owl-nav{
+    @include breakpoint(md){
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .fa-angle-left, .fa-angle-right{
+        color: #E69F33;
+        font-size: 30px;
+        font-weight: bold;
+        padding:0px 10px;
+        border: 0;
+    }
+    
+}

@@ -1,0 +1,106 @@
+.donate-bg{
+    background-image: url("../../frontend/img/donate-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 250px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    &::after{
+        content: ""; 
+        position: absolute;
+        display: block;
+        background-color: black;  
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 0.5;
+    }
+    &_title{
+        color: #fff;
+    font-weight: bold;
+    font-size: 30px;
+    letter-spacing: 2px;
+    z-index: 100;
+    text-transform: uppercase;
+    text-shadow: 0 0 9px black;
+         span{
+            color: #F48D3A;;
+         }
+        }
+}
+.donation-top{
+
+    max-width: 740px;
+    margin: 0 auto;
+    margin-top: 50px;
+
+    text-align: center;
+    &_title{
+        font-size: 35px;
+        font-weight: 500;
+        color: #4203BF;
+
+        }
+}
+
+.donate-bank-1 {
+    background: #4203BF;
+    border-radius: 5px;
+    color: #fff;
+    padding: 20px;
+    &-wrap{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+        .bank-address{
+            max-width: 270px;
+        }
+    }
+    p{
+        margin-bottom: 0;
+        line-height: 26px;
+    }
+
+}
+
+.donate-bkash-area{
+    text-align: center;
+}
+
+.donation-walk{
+    &_desc{
+        max-width: 740px;
+        text-align: center;
+        margin:0 auto;
+        margin-bottom: 20px;
+    }
+}
+
+.donation-walk-wrap{
+    background-color: #4203BF;
+    color: #fff;
+    text-align: center;
+    padding:20px;  
+    display: flex;
+    justify-content: space-around; 
+    border-radius: 5px;
+
+    .donation-walk-area{
+        
+        &_title{
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+        &_name{
+            margin-bottom: 0;
+            line-height: 28px;
+        }
+    }
+    
+}

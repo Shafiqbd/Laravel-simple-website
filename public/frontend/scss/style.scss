@@ -1,0 +1,55 @@
+//Base
+@import 'base/reset';
+@import 'base/typography';
+@import 'base/common';
+
+//Utils
+@import 'utils/functions';
+@import 'utils/mixins';
+@import 'utils/variable';
+
+//Components
+@import 'components/buttons'; 
+@import 'components/header'; 
+@import 'components/charts';  
+
+//Layout
+@import 'layout/responsive';
+@import 'layout/footer';
+@import 'layout/forms';
+@import 'layout/grid';
+@import 'layout/header';
+@import 'layout/nav';
+@import 'layout/sidebar';
+
+
+//Themes
+@import 'themes/black';
+@import 'themes/blue';
+@import 'themes/gray'; 
+@import 'themes/white';  
+
+//Vendors
+@import 'vendors/bootstrap';
+@import 'vendors/owl-carousel';
+// @import 'vendors/font-awesome.min';
+
+
+//Pages
+@import 'pages/contact';
+@import 'pages/home';
+@import 'pages/about';
+@import 'pages/service'; 
+@import 'pages/facilities'; 
+@import 'pages/notice';  
+@import 'pages/noticeboard'; 
+@import 'pages/gallery'; 
+@import 'pages/news'; 
+@import 'pages/staff'; 
+@import 'pages/donate'; 
+@import 'pages/academic';  
+
+
+
+
+
